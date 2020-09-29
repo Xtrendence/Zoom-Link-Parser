@@ -1,0 +1,101 @@
+:root {
+	--shadow-dark:0 0 10px rgba(0,0,0,0.2);
+	--shadow-darker:0 0 10px rgba(0,0,0,0.4);
+	--font-family:"Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
+}
+html {
+	font-family:var(--font-family);
+}
+body {
+	background:rgb(40,40,55);
+	color:rgb(75,75,75);
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	overflow-y:visible;
+}
+button, input, svg, textarea {
+	border:none;
+	outline:none;
+	transition:background 0.25s, color 0.25s, fill 0.25s;
+}
+.noselect {
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	outline:none;
+}
+.hidden {
+	display:none;
+	visibility:hidden;
+	position:absolute;
+	z-index:-1;
+}
+::-webkit-scrollbar {
+	display:block;
+	width:12px;
+	background:none;
+}
+::-webkit-scrollbar-thumb {
+	border-radius:4px;
+	background:rgb(255,255,255);
+}
+::-webkit-scrollbar-thumb:hover {
+	background:rgb(240,240,240);
+}
+::-webkit-scrollbar-track {
+	background:none;
+}
+
+input::placeholder, textarea::placeholder {
+	color:rgb(200,200,200);
+}
+#invitation-link {
+	background:rgb(60,60,80);
+	color:rgb(255,255,255);
+	resize:none;
+	padding:10px;
+	display:block;
+	width:350px;
+	height:100px;
+	margin:20px 0 20px 20px;
+}
+#parse {
+	background:rgb(60,60,80);
+	color:rgb(255,255,255);
+	height:40px;
+	width:80px;
+	margin-left:20px;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#parse:hover {
+	background:rgb(50,50,70);
+}
+span {
+	color:rgb(255,255,255);
+	margin-top:20px;
+	margin-left:20px;
+	display:block;
+}
+input {
+	background:rgb(60,60,80);
+	color:rgb(255,255,255);
+	margin-top:20px;
+	margin-left:20px;
+	height:40px;
+	width:350px;
+	padding:0 10px 0 10px;
+}
+#token {
+	display:block;
+}
+#meeting-id {
+	display:block;
+}
+#password {
+	display:block;
+}

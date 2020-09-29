@@ -99,3 +99,9 @@ input {
 #password {
 	display:block;
 }
+
+@media screen and (max-width:500px) {
+	#invitation-link, input {
+		width:calc(100% - 60px);
+	}
+}

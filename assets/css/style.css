@@ -3,7 +3,7 @@
 	--shadow-darker:0 0 10px rgba(0,0,0,0.4);
 	--font-family:"Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
 }
-html {
+html, textarea {
 	font-family:var(--font-family);
 }
 body {
